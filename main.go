@@ -12,6 +12,6 @@ func main() {
 	viper.ReadInConfig()
 	fmt.Println("Hello!")
 
-	r := plugin.PluginRequest{"main"}
+	r := plugin.PluginRequest{"main", 42}
 	echo.Call(&r)
 }
